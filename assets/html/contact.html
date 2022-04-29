@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>İletişim | Sude Çakır</title>
+    
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+        <!--Bootstrap 4-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <!--Custom Styles-->
+        <link rel="stylesheet" href="../css/style.css">
+    
+       
+    </head>
+    <body>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="col-4 logo text-center">
+                    <a href="../../index.html">
+                        <p>Sude Çakır</p>
+                    </a>
+                </div>
+                <div class="col-6 nav-links">
+                    <ul>
+                        <li><a href="login.html">Giriş</a></li>
+                        <li><a href="hometown.html">Memleket</a></li>
+                        <li><a href="cv.html">Özgeçmiş</a></li>
+                        <li><a href="../../index.html">Hakkımda</a></li>
+                    </ul>
+                </div>
+                <div class="burger col-2">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+        <main class="container-fluid main-form form">
+            <div class="row form-div">
+                <div class="col-12">
+                    <div>
+                        <h1>İLETİŞİM</h1>
+                        <form method="POST" action="../php/contactSuccess.php" onsubmit="return submitForm()" autocomplete="off">
+                            <input type="text" placeholder="İsim" name="name" class="contact-input">
+                            <input type="text" placeholder="Soyisim" name="surname" class="float-right contact-input">
+                            <input type="email" placeholder="E-posta" name="email">
+                            <select name="select">
+                                <option value="empty" disabled selected hidden>Lütfen bir konu seçiniz.</option>
+                                
+                                <option value="bug">Hata bildirimi</option>
+                                <option value="copyright">Telif hakkı ihlali</option>
+                            </select>
+                            <textarea name="message" placeholder="Mesajınızı buraya yazınız."></textarea>
+                            <input type="reset" value="Temizle" class="buttons contact-input">
+                            <input type="submit" value="Gönder" class="buttons contact-input float-right">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <a href="../../index.html">Hakkımda</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="cv.html">Özgeçmiş</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="hometown.html">Memleket</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="login.html">Giriş</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>2022 Sude ÇAKIR</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
