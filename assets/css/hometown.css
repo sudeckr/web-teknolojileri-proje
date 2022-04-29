@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 13px;
+}
+
+nav{
+    background-color: #0D393A;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a, nav a:hover{
+    color: #fafada;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 3rem;
+}
+.slide{
+    color: #fafada;
+    padding: 350px 0 250px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-bottom: 20px solid #0D393A;
+}
+
+/*slider*/
+.image-1{
+    background-image: url('../img/carkcaddesi.jpg');
+}
+
+.image-2{
+    background-image: url('../img/kabak1.jpg');
+}
+
+.image-3{
+    background-image: url('../img/kopru.jpg');
+}
+
+.image-4{
+    background-image: url('../img/sapanca2.jpg');
+}
+/*/slider*/
+
+main{
+    margin-top: 80px;
+}
+
+.main-pictures{
+    background-color: #00A199;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#pic4{
+    padding-bottom: 80px;
+}
+
+.main-pictures h1{
+    margin-top: 50px;
+}
+
+.main-pictures p{
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.population{
+    background-color: #00A199;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+.population h1{
+    font-size: 6rem;
+}
+
+.population h3{
+    font-size: 2rem;
+}
+
+.image-box img, .legacy img, .legacy-explain img{
+    width: 90%;
+}
+
+.image-box img, .legacy img, .legacy-explain img{
+    border: 5px solid rgba(0, 0, 0, 0.767);
+}
+
+.legacy{
+    background-color:#00A199;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.legacy h1{
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.legacy p{
+    font-size: 1.4rem;
+}
+
+.legacy-explain div{
+    margin-top: 80px;
+}
+
+.e-1{
+    margin-top: 0 !important;
+}
+
+footer{
+    background-color: #0D393A;
+    text-align: center;
+    margin-top: 80px;
+    padding: 80px 0 10px 0;
+}
+
+footer a, footer a:hover{
+    color: #fafada;
+    font-size: 1.5rem;
+}
+
+.copyright{
+    color: #fafada;
+    margin-top: 80px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 768px){
+    .main-pictures p{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    html{
+        font-size: 14px;
+    }
+
+    .population h1{
+        font-size: 10rem;
+    }
+}
+
+@media screen and (min-width: 920px){
+    html{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 18px;
+    }
+}
