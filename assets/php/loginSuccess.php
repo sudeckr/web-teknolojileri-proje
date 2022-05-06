@@ -44,7 +44,7 @@
                 <div class="col-12 offset-2 col-md-8 offset-md-2">  
                     <div class="success">
                     <p class="text-center">
-                        <?php if($_POST['userName']=='b211210354@sakarya.edu.tr'&& $_POST['password']=='123'){
+                        <?php if($_POST['userName']=='b211210354@sakarya.edu.tr'&& $_POST['password']=='b211210354'){
                             echo 'Hoş geldin b211210354';
                         }else{
                             header("Location: ../html/login.html");
