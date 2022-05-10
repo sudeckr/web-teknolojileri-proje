@@ -14,7 +14,7 @@
         <!--Custom Styles-->
         <link rel="stylesheet" href="../css/style.css">
     
-        
+       
     </head>
     <body>
         <nav class="container-fluid">
@@ -26,9 +26,9 @@
                 </div>
                 <div class="col-6 nav-links">
                     <ul>
-                        <li><a href="../html/hometown.html">Memleket</a></li>
-                        <li><a href="../html/contact.html">İletişim</a></li>
-                        <li><a href="../html/cv.html">Özgeçmiş</a></li>
+                        <li><a href="hometown.html">Memleket</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a href="cv.html">Özgeçmiş</a></li>
                         <li><a href="../../index.html">Hakkımda</a></li>
                     </ul>
                 </div>
@@ -40,16 +40,15 @@
             </div>
         </nav>
         <main class="container-fluid main-form form">
-            <div class="row">
-                <div class="col-12 offset-2 col-md-8 offset-md-2">  
-                    <div class="success">
-                    <p class="text-center">
-                        <?php if($_POST['userName']=='b211210354@sakarya.edu.tr'&& $_POST['password']=='b211210354'){
-                            echo 'Hoş geldin b211210354';
-                        }else{
-                            header("Location: ../html/login.html");
-                        }?>
-                        </p>        
+            <div class="row form-div">
+                <div class="col-12">  
+                    <div>
+                        <h1>GİRİŞ YAP</h1>
+                        <form action="../php/loginSuccess.php" method="post" autocomplete="off">
+                            <input type="text" placeholder="Kullanıcı Adı" name="userName">
+                            <input type="password" placeholder="Parola" name="password">
+                            <input class="buttons" type="submit" value="Giriş">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -60,13 +59,13 @@
                     <a href="../../index.html">Hakkımda</a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a href="../html/cv.html">Özgeçmiş</a>
+                    <a href="cv.html">Özgeçmiş</a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a href="../html/contact.html">İletişim</a>
+                    <a href="contact.html">İletişim</a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <a href="../html/hometown.html">Memleket</a>
+                    <a href="hometown.html">Memleket</a>
                 </div>
             </div>
             <div class="row">
